@@ -8,9 +8,7 @@ setup(
         'aiohttp'
     ],
     entry_points={
-        'console_scripts': [
-            # Define your command line scripts here
-        ],
+        'console_scripts': [],
     },
     author='cwe',
     author_email='ozu@protocol.lat',
