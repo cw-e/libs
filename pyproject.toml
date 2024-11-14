@@ -1,0 +1,96 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = [
+  "hatch-vcs",
+  "hatchling",
+]
+
+[project]
+name = "libs"
+description = "Carefully crafted standalone libraries created in the Python language. "
+readme = "README.md"
+keywords = [
+  "Standalone",
+  "Encryption",
+  "API",
+]
+license = { text = "Apache-2.0" }
+maintainers = [
+  { name = "uhcode" },
+]
+authors = [
+  { name = "cwe <ozu@protocol.lat> and Contributors", email = "ozu@protocol.lat" },
+]
+requires-python = ">=3.8"
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "Topic :: Internet",
+  "Topic :: Multimedia :: Sound/Audio",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dynamic = [
+  "version",
+]
+dependencies = [
+  "httpx",
+]
+optional-dependencies.tests = [
+  "flaky",
+  "pytest",
+  "pytest-cov",
+  "pytest-random-order",
+  "pyyaml",
+]
+urls.Changelog = "https://github.com/uhcode/libs/releases"
+urls.Homepage = "https://github.com/uhcode/libs"
+urls.Source = "https://github.com/uhcode/libs"
+
+[tool.hatch]
+version.source = "vcs"
+
+[tool.hatch.version.raw-options]
+local_scheme = "no-local-version"
+
+[tool.ruff]
+fix = true
+
+lint.select = [
+  "C4",     # flake8-comprehensions
+  "E",      # pycodestyle errors
+  "EM",     # flake8-errmsg
+  "F",      # pyflakes errors
+  "I",      # isort
+  "ISC",    # flake8-implicit-str-concat
+  "LOG",    # flake8-logging
+  "PGH",    # pygrep-hooks
+  "RUF022", # unsorted-dunder-all
+  "RUF100", # unused noqa (yesqa)
+  "UP",     # pyupgrade
+  "W",      # pycodestyle warnings
+  "YTT",    # flake8-2020
+]
+lint.extend-ignore = [
+  "E203", # Whitespace before ':'
+  "E221", # Multiple spaces before operator
+  "E226", # Missing whitespace around arithmetic operator
+  "E241", # Multiple spaces after ','
+]
+lint.isort.known-first-party = [
+  "cwe-libs",
+]
+lint.isort.required-imports = [
+  "from __future__ import annotations",
+]
+
+[tool.pyproject-fmt]
+max_supported_python = "3.13"
