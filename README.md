@@ -1,5 +1,5 @@
 <h1 align="center">libs</h1>
-<p align="center">a library created with tons of features.</p>
+<p align="center">Carefully crafted standalone libraries created in the Python language.</p>
 
 <p align="center">
 <img src="https://pepy.tech/cwe-libs/libs">
