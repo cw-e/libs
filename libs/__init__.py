@@ -9,3 +9,5 @@ __description__ = 'Carefully crafted standalone libraries created in the Python 
 __url__ = 'https://github.com/uhcode/libs'
 
 # Import the modules from the package
+
+from src import *
