@@ -27,6 +27,7 @@ Other Features
 - Spotify API
 - LastFM API
 - Weather API
+- Fragment API
 Installing
 ----------
 
