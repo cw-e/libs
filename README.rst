@@ -1,6 +1,7 @@
 libs
 ==========
-**NOTE:** `libs <https://github.com/bowlsr/libs>`_ is currently under development, if there is any issues. Please refer to `issues <https://github.com/uhcode/libs/issues>`_
+**NOTE:** `libs <https://github.com/bowlsr/libs>`_ is no longer in development, if there is any issues. Please refer to `issues <https://github.com/uhcode/libs/issues>`_
+**NOTE:** you may continue to expand on this project.
 
 Carefully crafted **standalone** libraries created in the Python language.
 
